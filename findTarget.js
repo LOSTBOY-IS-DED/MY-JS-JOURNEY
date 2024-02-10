@@ -3,4 +3,4 @@
 // function
 // input : array , target (number)
 // output : index of the target present in the array 
-function findTarget();
+

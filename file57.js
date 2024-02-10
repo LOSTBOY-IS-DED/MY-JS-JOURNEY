@@ -1,17 +1,24 @@
-// important array methods 
+// map method 
 
-// forEach 
-// map
-// filter
-// reduce 
+// const numbers = [3,4,6,1,8];
+// const square =function(number){
+//     return number*number;
+//     // its crucial to return while using map
+// }
 
-const numbers = [4, 2, 5, 8];
+// const squareNumber =numbers.map(square);
+// console.log(squareNumber);
+//this is a callback function this will always make a new array and we can save this in VARIABLE
 
-function multiplyBy2( number, index){
-    console.log ("index is ", index);
-    console.log ('${number}*2 = ${number*2}');
-}
+const users = [
+    {firstName: "subh", age: "19"},
+    {firstName: "neha", age: "19"},
+    {firstName: "ayush", age: "11"},
+    {firstName: "souvik", age: "12"},
+]
 
-for(let i = 0 ; i<numbers.length; i++){
-    multiplyBy2(numbers[i],i)
-}
+const userNames = users.map((user)=>{
+    return user.firstName;
+});
+
+console.log(userNames);
