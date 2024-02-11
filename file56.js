@@ -28,11 +28,12 @@ const users = [
 
 users.forEach(function(user){
     console.log(user.firstName);
-});
+}); //we  can make this a arrow function too 
 
 for (let user of users ){
     console.log(user.firstName);
 }
+// This both is gonna perform the same thing
     
 
 

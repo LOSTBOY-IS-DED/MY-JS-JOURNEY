@@ -22,3 +22,6 @@ const userNames = users.map((user)=>{
 });
 
 console.log(userNames);
+
+
+
