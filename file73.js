@@ -32,7 +32,7 @@ const user3 = {
 
 mySelf.call(user1,"guitar","arijit singh");
 FemaleSelf.apply(user2,["singing","billie elish"]);
-const FuncBind = mySelf.bind(user1,"guitar","arijit singh")
+const FuncBind = mySelf.bind(user3,"guitar","Eminem")
 FuncBind();
 
 //  these are important from interview perspective 
