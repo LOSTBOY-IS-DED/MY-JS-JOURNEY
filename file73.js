@@ -1,43 +1,41 @@
-function hello (){
-    console.log("hello world");
+function mySelf (hobbies , favSinger ){
+    console.log ("user first name is" ,this.firstName, "his age is" ,this.age, "he is doing " ,this.class, "his stream is " ,this.stream, "his hobby is" ,hobbies, "his fav singer is ",favSinger);
 }
-// hello();
-hello.call(); // this will also call the function 
-// now we will learn about call , apply , bound 
-// this is something important for an interview
-
-// we can also declare the function outside the scope at once 
-function about(hobby , favMusician){
-    console.log( this.firstname, this.age, hobby, favMusician);
+function FemaleSelf (hobbies , favSinger ){
+    console.log ("user first name is" ,this.firstName, "her age is" ,this.age, "she is doing " ,this.class, "her stream is " ,this.stream, "her hobby is" ,hobbies, "her fav singer is ",favSinger);
 }
-
 const user1 = {
-    firstname : "subhajit",
-    age : 19 ,
-    // about : function (hobby , favMusician){
-    //     console.log( this.firstname, this.age, hobby, favMusician);
-    // }
+    firstName : "Subh",
+    age : 19,
+    class : "B.TECH ",
+    stream : "CSE",
+    about : function (){
+        console.log(this.firstName , this.age, this.class, this.stream);
+    }
 }
-
 const user2 = {
-    firstname : "mohit",
-    age : 17 ,
+    firstName : "Neha",
+    age : 19,
+    class : "B.TECH",
+    stream : "CSE",
 }
-
 const user3 = {
-    firstname : "Neha",
-    age : 18 ,
+    firstName : "Ayush",
+    age : 12,
+    class : "higher secondary",
+    stream : "CSE",
 }
 
-about.call(user1,"guitar","arijit singh");
-// user1.about.call(user2,"piano","shreya ghosal");
-about.call(user2,"piano","shreya ghosal");
 
-// apply 
-// apply is also same as call the only difference is we apply a array instead of two different parameters
-about.apply(user3 , ["guitar","eminem"]);
+// user1.about.call(user1);
+// user1.about.call(user2); // this is like borrowing the about function from user 1 to user 2 
 
-// bind
-// bind does nothing but it returns a function 
-const Func = about.bind(user1,"guitar","arijit singh");
-Func();
+mySelf.call(user1,"guitar","arijit singh");
+FemaleSelf.apply(user2,["singing","billie elish"]);
+const FuncBind = mySelf.bind(user1,"guitar","arijit singh")
+FuncBind();
+
+//  these are important from interview perspective 
+// call is user to run the function for eg : hello.call();
+// apply is just same as call but it takes a array as parameters
+// meanwhile bind does nothing but it returns from a function which we can store in a variable as a function expression...
