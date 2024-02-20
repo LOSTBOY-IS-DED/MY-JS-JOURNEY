@@ -11,3 +11,7 @@ const obj = {
     [key2] : value2
 }
 console.log(obj);
+
+// we can also do this as 
+// obj[key1]= value1 ;
+// obj[key2]= value2 ;
