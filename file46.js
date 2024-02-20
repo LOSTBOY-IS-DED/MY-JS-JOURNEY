@@ -10,6 +10,7 @@ const addTwoNumbers = (a , b ) => {
 }
 addedResult= addTwoNumbers(4,6);
 console.log(addedResult);
+// we can remove the parenthesis bracket from parameters if we have only one parameter 
 
 const isEven = (number) => {
     if (number%2===0){
@@ -18,6 +19,7 @@ const isEven = (number) => {
         return true ;
     }
 }
+//const isEven = number => number%2===0; we can write the same 
 
 console.log(isEven(10));
 
