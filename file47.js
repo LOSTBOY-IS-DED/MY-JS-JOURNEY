@@ -10,6 +10,5 @@ function hello (){
 const sayHello = function(){
     console.log("say hello");
 }
-
 console.log(sayHello);
 
