@@ -18,7 +18,7 @@ printDetails = (obj) => {
 
 // now what is parameter destructuring ?
 
-printDetails2 = (firstname , gender) => {
+printDetails2 = (firstname , gender, age ) => {
     console.log(firstname);
     console.log(gender);
     // console.log(obj.age); //undefined
