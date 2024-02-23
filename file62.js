@@ -15,7 +15,7 @@ const userCart = [
     {productId : 3, productName : "Television", price : 70000},
 ]
 
-//check every product whose price is below 70000
+//check if there is a product whose price is below 70000
 
 const res = userCart.every((cartItem)=> cartItem.price<70000);
 console.log(res);
