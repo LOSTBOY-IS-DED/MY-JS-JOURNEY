@@ -7,6 +7,11 @@ const hello = () => {
         console.log("hello world")
     }
 }
-setTimeout(hello, 2000);
+// setTimeout(hello, 2000);
+const id = setTimeout(()=>{  // we can store this is a variable 
+    console.log("Hello world");
+},3000);
 
 console.log("script ends"); 
+clearTimeout(id);   //script starts // cleartimeout ensure that the setTimeOut shouldn't run 
+                    // script ends
