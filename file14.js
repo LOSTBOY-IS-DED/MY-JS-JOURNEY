@@ -1,6 +1,6 @@
 // if else condition 
 
-const prompt = require('prompt-sync')();
+// const prompt = require('prompt-sync')();
 
 let age = +prompt("enter your age :");;
 

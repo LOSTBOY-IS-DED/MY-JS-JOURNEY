@@ -4,4 +4,4 @@
 const singHappyBirthday = function (){
     console.log("happy birhtday to you ...");
 }
-singHappyBirthday();
+console.log(singHappyBirthday);
