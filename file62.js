@@ -11,8 +11,8 @@ console.log(ans);
 
 const userCart = [
     {productId : 1, productName : "Mobile", price : 20000},
-    {productId : 2, productName : "Laptop", price : 100000},
-    {productId : 3, productName : "Television", price : 70000},
+    {productId : 2, productName : "Laptop", price : 5000},
+    {productId : 3, productName : "Television", price : 69000},
 ]
 
 //check if there is a product whose price is below 70000
